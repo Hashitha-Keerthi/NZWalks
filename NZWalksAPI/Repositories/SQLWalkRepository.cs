@@ -73,11 +73,13 @@ namespace NZWalksAPI.Repositories
 
         public async Task<Walk?> UpdateByIdAsync(Guid id, Walk walk)
         {
+
             var existingWalk = await dbContext.Walks.FirstOrDefaultAsync(x => x.Id == id);
             if (existingWalk == null)
             {
                 return null;
             }
+
 
             existingWalk.Name = walk.Name;
             existingWalk.Description = walk.Description;
