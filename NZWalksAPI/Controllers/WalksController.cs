@@ -1,7 +1,5 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client;
 using NZWalksAPI.CustomActionFilters;
 using NZWalksAPI.Models.Domains;
 using NZWalksAPI.Models.DTO;
